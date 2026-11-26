@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Quarter 2 Project</title>
+
+<link rel="stylesheet"
+href="https://pyscript.net/releases/2024.1.1/core.css">
+
+<script type="module"
+src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial;
+    color:white;
+    background-image:url("qfpd69e7k7v31 (1).png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+nav{
+    background:#9e0000;
+    height:85px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+}
+
+.logo img{
+    width:70px;
+}
+
+.links a{
+    text-decoration:none;
+    color:black;
+    background:red;
+    padding:10px 20px;
+    border-radius:15px;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.box{
+    width:600px;
+    background:rgba(0,0,0,0.8);
+    padding:25px;
+    border-left:5px solid red;
+    border-radius:10px;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+input{
+    padding:10px;
+}
+
+button{
+    padding:10px;
+    background:red;
+    color:white;
+    border:none;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    margin:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="Phantom_Thieves_Logo.webp">
+</div>
+
+<div class="links">
+    <a href="#element">Element Checker</a>
+    <a href="#club">Club Members</a>
+    <a href="#creator">Meet the Creator</a>
+</div>
+
+</nav>
+
+<section id="element">
+
+<div class="box">
+
+<h1>Element Checker</h1>
+
+<p>Enter H, O, or He</p>
+
+<br>
+
+<input type="text" id="symbol">
+
+<button py-click="check_element">
+Check
+</button>
+
+<br><br>
+
+<p id="answer"></p>
+
+</div>
+
+</section>
+
+<section id="club">
+
+<div class="box">
+
+<h1>Social Sciences Club Members</h1>
+
+<ul>
+    <li>Michael Barrameda</li>
+    <li>Ethan Karlisle De Leon</li>
+    <li>Andrey Santos</li>
+    <li>Cyra Cheang</li>
+    <li>Heather Son</li>
+    <li>Miguel Lasap</li>
+    <li>Yujin Kim</li>
+    <li>Sage Aguinaldo</li>
+    <li>Mikaela Lindaya</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="creator">
+
+<div class="box">
+
+<h1>MEET THE CREATOR</h1>
+
+<h2>About Me</h2>
+
+<p>
+Hello! My name is Michael Barrameda from 10-E.
+</p>
+
+<br>
+
+<h2>Interests</h2>
+
+<p>
+History<br>
+World Politics<br>
+International Relations<br>
+DC / Marvel<br>
+Anime
+</p>
+
+<br>
+
+<h2>Hobbies</h2>
+
+<p>
+Boxing<br>
+Gaming<br>
+Listening to Music
+</p>
+
+<br>
+
+<h2>Dream</h2>
+
+<p>
+To become a rich and successful lawyer or diplomat,
+retire my parents, and start a family.
+</p>
+
+<br>
+
+<h2>Favorite Quote</h2>
+
+<p>
+"There is a superhero in all of us. We just need the courage to put on the cape."
+</p>
+
+</div>
+
+</section>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
